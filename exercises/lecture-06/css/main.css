@@ -1,0 +1,122 @@
+/* main.css */
+
+/* колір тега a indigo */
+a {
+    color: indigo; 
+}
+
+/* колір тега a gold, якщо посилання вже відвідали */
+a:visited {
+    color: gold; 
+}
+
+/* колір тега a salmon, якщо вказівник користувача знаходиться над ним */
+a:hover {
+    color: salmon; 
+}
+
+/* колір тега a red, який є активованим */
+a:active {
+    color: red; 
+}
+
+/* колір тега a orange, який отримав фокус */
+a:focus {
+    color: orange; 
+}
+
+/* зелений фон з прозорістю 0.25 */
+input[type="number"] {
+    background-color: rgba(0, 128, 0, 0.25); 
+}
+
+/* червоний фон з прозорістю 0.25, якщо значення поза межами 1-10 */
+input[type="number"]:not(:valid) {
+    background-color: rgba(255, 0, 0, 0.25); 
+}
+
+/* Встановіть першому елементу li помаранчевий колір */
+.first-list {
+    > ul > li:first-child {
+        color: orange; 
+    }
+}
+
+/* Встановіть першому елементу li та першому елементу span помаранчевий колір */
+.second-list {
+    > ul {
+        > li:first-child {
+            color: orange; 
+        }
+        > li:nth-child(2) span {
+            color: orange; 
+        }
+    }
+
+}
+
+/* Встановіть останньому елементу li та останньому елементу span помаранчевий колір*/
+.third-list {
+    > ul {
+        > li > span:last-child {
+            color: orange; 
+        }
+        > li:last-child {
+            color: orange; 
+        }
+    }
+}
+
+/* - Встановіть елементу li помаранчевий колір, якщо він не має аргумента class="first-item"
+- Встановіть всім елементаи li чорний текст і жовтий фон, крім елемента li з класом .first-item та останнього елемента li у списку */
+.fourth-list {
+    > ul {
+        > li:not(.first-item) {
+            color: orange;
+        }
+        > li:not(.first-item):not(:last-child) {
+            color: black;
+            background-color: yellow;
+        }
+        
+    } 
+    
+}
+
+
+
+/* - Встановіть дпугому елементу li помаранчевий колір */
+.sixth-list {
+    > ol li:nth-child(2) {
+        color: orange;
+    }
+    
+}
+
+/* - Встановіть кожному парному елементу li помаранчевий колір */
+ol li:nth-child(even) {
+    color: orange;
+}
+
+
+/* - Встановіть кожному елементу li помаранчевий колір за фрпмулою 2n+6 */
+ol li:nth-child(2n+6) {
+    color: orange;
+}
+
+/* - Вчтавте за допомогою псевдоелемента before перед Укрвїні слово Слава */
+.ua::before {
+    content: "Слава ";
+}
+
+/* - Вчтавте за допомогою псевдоелемента after після Героям слово Слава! */
+.hero::after {
+    content: " Слава!";
+}
+
+/* - Вчтавте за допомогою псевдоелемента before симввол параграфу */
+.cont::before {
+    content: "\00A7"; /* Шестнадцятковий код для символу параграфу */
+}
+
+

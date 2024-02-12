@@ -37,3 +37,30 @@ h2 {
 .footer-social {
     
 }
+
+/*  Визначити клас text-uppercase з властивістю text-transform: uppercase; */
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+/* Визначити клас bg-dark з властивістю background-color: black */
+.bg-dark {
+    background-color: black;
+}
+
+/* Визначити клас text-white з властивістю color: white */
+.text-white {
+    color: white;
+}
+
+/* Визначити селектор ul.categories li a з властивостями color: indigo, text-decoration: none, font-size: 1.2rem */
+ul.categories li a {
+    color: indigo;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Визначити селектор ul.categories li a з властивостями ul.categories li a:hover, background-color: lightgray */
+ul.categories li a:hover {
+    background-color: lightgray;
+}
