@@ -23,7 +23,7 @@
 }
 
 .divider {
-    background: url(/images/divider-bg.jpg);
+    background: url(/lessons/images/divider-bg.jpg);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
