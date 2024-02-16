@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+	<style>
+	.box{ 
+		/* padding-top:    10px; 
+		padding-right:  20px; 
+		padding-bottom: 25px; 
+		padding-left:   20px;  
+
+		margin-top:    25px; 
+		margin-right:  20px; 
+		margin-bottom: 25px; 
+		margin-left:   20px;   */
+
+        /* Перепишіть властивості padding та margin за допомогою скороченого синтаксу */
+        padding: 10px 20px 25px;
+		margin: 25px 20px; 
+	}
+
+    .box_width {
+        width: 300px; 
+        padding: 10px; 
+        border: dashed 2px green;
+
+        /* Обчислити ширину елемента .box_width: total_width = width + 2 * padding + 2 * border = 324px */
+    }
+    .first-box {
+        width: 200px;
+        height: 100px;
+        border: 8px solid blue;
+        padding: 20px;
+        background: yellow;
+
+        /* Обчислити ширину і висоту елемента .first-box. total_width = width + 2 * padding + 2 * border = 256px; total_heigh = width + 2 * padding + 2 * border = 156px*/
+    }
+
+    .second-box {
+        width: 200px;
+        height: 100px;
+        border: 8px solid blue;
+        background: yellow;
+
+        /* Обчислити ширину і висоту елемента .second-box. total_width = width  + 2 * border = 216px; total_heigh = width + 2 * border = 116px */
+    }
+
+    div {
+        box-sizing:content-box;
+        width: 200px;
+        border: 8px solid blue;
+        padding: 20px;
+        background: yellow;
+
+        /* Обчислити ширину елемента div. total_width = width + 2 * padding + 2 * border = 256px */
+    }
+
+    div{
+        box-sizing:border-box;
+        width: 200px;
+        border: 8px solid blue;
+        padding: 20px;
+        background: yellow;
+
+        /* Обчислити ширину контенту елемента div.  total_width = width = 200px*/
+
+    }
+	</style>
+</head>
+<body>
+    <h1><span>Awesome article</span></h1>
+
+    <div class="box">
+        <p>First block</p>
+    </div>
+
+    <div class="box_width"></div>
+
+    <div class="first-box"></div>
+
+    <div class="second-box"></div>
+
+    <section class="task-seven">
+        <div id="example1">
+            <p>Правило для example1: фон всередині елемента має простягатися за межі рамки.</p>
+        </div>
+        
+        <div id="example2">
+            <p>Правило для example2: фон всередині елемента має простягатися до внутрішнього краю рамки.</p>
+        </div>
+        
+        <div id="example3">
+            <p>Правило для example3: фон всередині елемента має простягатися до краю поля вмісту.</p>
+        </div>
+    </section>
+
+</body>
+</html>
