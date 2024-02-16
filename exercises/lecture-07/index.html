@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<link rel="shortcut icon" href="/exercises/favicon.ico" type="image/x-icon">
+    <style>
+        
+        /* - Встановити background для класу negative як лінійний градієнт, що направлений вліво та має такі точки зупинки: -50%, -10%, 0%, 100%, 150%. Для кожної точки зупинки встановити колір, що змінюється від світло-синього до темно-синього.  */
+        .negative {
+            background: linear-gradient(to left, #ADD8E6 -50%, #3A5FCD -10%, #0000FF 0%, #0000FF 100%, #0000FF 150%);
+        }
+
+        /* - Встановити background для класу percents як лінійний градієнт, що направлений вниз та має такі точки зупинки: 2em, 4em, 8em, 16em, 32em, 64em, 128em. Для кожної точки зупинки встановити колір, що змінюється від світло-зеленого до темно-зеленого.  */
+        .percents {
+            background: linear-gradient(to bottom, #98FB98 2em, #90EE90 4em, #7CFC00 8em, #32CD32 16em, #228B22 32em, #008000 64em, #006400 128em);
+        }
+
+        /* - Встановити background для класу radial два радіальних градієнта з типом ellipse, перший з яких містить 2 кольори - помаранчевий та прозорий і направлений вверх, а другий містить 2 кольори - червоний та прозорий і направлений вниз.  */
+        .radial {
+            background: radial-gradient(ellipse at center, orange, transparent), radial-gradient(ellipse at center, transparent, red);
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <!-- Створити svg-прямокутник розміром 100х100 з координатами 20,20 20, 20. Для обрамлення встановити колір #1c87c9 та товщину лінії 4. Встановити фон прямокутника lightgray. -->
+    <svg width="200" height="200">
+        <rect x="20" y="20" width="100" height="100" stroke="#1c87c9" stroke-width="4" fill="lightgray"/>
+    </svg>
+    
+    <!-- Створити svg-коло розміром 200х200 радіусом = 60 та центром з координатами 100, 70. Для обрамлення встановити червоний колір та товщину лінії 4. Встановити фон кола lightgray. -->
+    <svg width="200" height="200">
+        <circle cx="100" cy="70" r="60" stroke="red" stroke-width="4" fill="lightgray"/>
+    </svg>
+
+    <!-- Створити svg-малюнок годинника, що показує час = 3 години -->
+    <svg width="200" height="200">
+        <!-- Рисуємо обличчя годинника -->
+        <circle cx="100" cy="100" r="80" stroke="black" stroke-width="4" fill="white" />
+        
+        <!-- Рисуємо цифри -->
+        <text x="95" y="30" font-size="24" fill="black">12</text>
+        <text x="170" y="105" font-size="24" fill="black">3</text>
+        <text x="95" y="180" font-size="24" fill="black">6</text>
+        <text x="20" y="105" font-size="24" fill="black">9</text>
+        
+        <!-- Рисуємо стрілки -->
+        <!-- Стрілка годин -->
+        <line x1="100" y1="100" x2="160" y2="100" stroke="black" stroke-width="6" transform="rotate(0, 100, 100)"/>
+        <!-- Стрілка хвилин -->
+        <line x1="100" y1="100" x2="100" y2="40" stroke="black" stroke-width="4" transform="rotate(0, 100, 100)"/>
+    </svg>
+
+
+    <!-- Створити svg-малюнок зірки (необов'язкове завдання) -->
+    <svg width="200" height="200">
+        <polygon points="100,10 40,198 190,78 10,78 160,198" fill="yellow" stroke="black" stroke-width="2"/>
+    </svg>
+          
+    
+    <h1>Gradient Text Glow</h1>
+
+    <div class="percents">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos itaque!
+    </div>
+
+    <div class="negative">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos itaque!
+    </div>
+
+    <div class="radial">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis cum magnam quae adipisci minima illum porro eius ipsa rem. Sequi eaque facere necessitatibus fugiat rerum facilis reprehenderit numquam dignissimos itaque!
+    </div>
+</body>
+</html>
