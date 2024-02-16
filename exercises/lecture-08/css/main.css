@@ -16,12 +16,10 @@
     background-clip: content-box;
   }
 
-  h1 {
+h1 {
     display: inline-block;
 
-    /* Максимальна ширина, яка займатиме доступний простір */
-    max-width: 100%; 
+    /* Ширина елемента буде мінімальною для вміщення контенту */
+    inline-size: min-content; 
 
-    /* Автоматичний перенос слів на новий рядок */
-    word-wrap: break-word; 
-  }
+}
