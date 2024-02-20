@@ -23,7 +23,7 @@
 }
 
 .divider {
-    background: url(/images/divider-bg.jpg);
+    background: url(/lessons/images/divider-bg.jpg);
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -149,6 +149,9 @@
     margin-right: 3rem;
 }
 
+.mt-5 {
+    margin-top: 3rem;
+}
 .d-inline-block {
     display: inline-block;
 }
