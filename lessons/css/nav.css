@@ -18,10 +18,16 @@
         font-size: 1.1rem;
     }
     > .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background-color: white;
         > a {
             font-size: 1.1rem;
             margin-right: .5rem;
             color: var(--anchor-color);
+            display: block;
         }
         > a:hover {
             color: var(--anchor-active-color);
@@ -38,6 +44,17 @@
         }
         > a:active {
             color: blueviolet;
+        }
+    }
+}
+
+@media (min-width: 40rem) {
+    .page-header {
+        & .navbar {
+            position: relative;
+        }
+        & .navbar > a {
+            display: inline-block;
         }
     }
 }
