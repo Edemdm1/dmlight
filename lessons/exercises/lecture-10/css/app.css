@@ -52,30 +52,36 @@
 
 
 .col-1 {
-    flex: 0 1 calc(100% / 12);
+    flex: 0 1 auto;
+    width: calc(100% / 12);
 }
 
 
 .col-2 {
-    flex: 0 1 calc(200% / 12);
+    flex: 0 1 auto;
+    width: calc(200% / 12);
 }
 
 
 .col-3 {
-    flex: 0 1 calc(300% / 12);
+    flex: 0 1 auto;
+    width: calc(300% / 12);
 }
 
 
 .col-4 {
-    flex: 0 1 calc(400% / 12);
+    flex: 0 1 auto;
+    width:calc(400% / 12);
 }
 
 
 .col-5 {
-    flex: 0 1 calc(500% / 12);
+    flex: 0 1 auto;
+    width: calc(500% / 12);
 }
 
 
 .col-6 {
-    flex: 0 1 calc(600% / 12);
+    flex: 0 1 auto;
+    width: calc(600% / 12);
 }
