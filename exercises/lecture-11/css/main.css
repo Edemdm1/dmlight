@@ -1,0 +1,75 @@
+/* main.css */
+
+.grid-char {
+    display: grid;
+}
+
+.gr-temp-col-4-50 {
+    grid-template-columns: repeat(4, 50px);
+}
+
+.gr-temp-col-2-auto {
+    grid-template-columns: repeat(2, auto);
+  }
+
+/* створити grid-контейнер з трьох стовпців шириною 15%, 60%, 25% */
+.first-grid-container {
+    grid-template-columns: 15% 60% 25%;
+}
+
+/* створити grid-контейнер з трьох рядків висотою 95px 1fr 70px */
+.second-grid-container {
+    display: grid;
+    grid-template-rows: 95px 1fr 70px;
+}
+
+/* створити grid-контейнер з трьох рядків висотою 90px 300px 1fr і чотирьох стовпців однакової ширини */
+.third-grid-container {
+    grid-template-rows: 90px 300px 1fr;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* створити grid-контейнер з чотирьох стовпців однакової ширини та розмістити стовпці в центрі контейнера */
+.fourth-grid-container {
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+}
+
+/* створити grid-контейнер з чотирьох стовпців однакової ширини, що дорівнює 50px та розташуйте стовпці в кінці рядка grid-контейнера */
+.fifth-grid-container {
+    grid-template-columns: repeat(4, 50px);
+    justify-content: end;
+}
+
+.sixth-grid-container {
+    justify-content: space-between;
+}
+
+.seventh-grid-container {
+    justify-content: space-around;
+}
+
+.eighth-grid-container {
+    justify-content: space-evenly;
+}
+
+.ninth-grid-container {
+    place-items: stretch;
+}
+
+.tenth-grid-container {
+    justify-items: start;
+}
+
+.eleventh-grid-container {
+    justify-items: center;
+}
+
+.twelfth-grid-container {
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+.thirtieth-grid-container {
+    justify-content: space-evenly;     
+}
