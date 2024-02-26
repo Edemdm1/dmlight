@@ -1,16 +1,22 @@
-.grid {
-  --min: 30ch;
-
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100%, var(--min)));
-  gap: 1rem;
+.grid-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, auto);
+    grid-template-areas:
+    "h h h"
+    "m m s"
+    "f f f";
 }
 
-.card {
-  min-width: var(--min);
-}
-
-body {
-  --padding: 5vw;
-  --max-width: 180ch;
-}
+.header {
+    grid-area: h;
+  }
+  .main {
+    grid-area: m;
+  }
+  .sidebar {
+    grid-area: s;
+  }
+  .footer {
+    grid-area: f;
+  }
