@@ -1,0 +1,51 @@
+/* app.css */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+table { 
+    width: 50rem; 
+    border-collapse: collapse; 
+    margin:3rem auto;
+}
+
+tr:nth-child(odd) {
+    background-color: lightgrey; /* світло-сіре тло для непарних рядків */
+}
+
+
+/* Визначте такі властивості елементу th: - тло - indigo; - колір - білий; - вага шрифту - напівжирний. */
+th { 
+    background-color: indigo;
+    color: white;
+    font-weight: 600;
+} 
+
+/* Визначте такі властивості елементів td, th: - padding - 10 пікселів, перерахувавши їх у rem; - border - товщиною в 1 піксель, солідну, світло-сіру; - вирівняйте текст зліва; - розмір шрифту - 18 пікселів, перерахувавши їх у rem. */
+td, th { 
+    padding: 0.625rem; /* 10 пікселів у rem (10/16=0,625)*/
+    border: 1px solid lightgrey;
+    text-align: left;
+    font-size: 1.125rem; /* 18 пікселів у rem (18/16=1,125) */
+}
+
+/* Створіть media-запит max-width: 50rem, що визначає наступне: - перетворює table, thead, tbody, th, td, tr на блоки; - приховує thead tr; - для елементу tr визначає border: 1px solid darkgrey; - для елементу td відміняє border, а потім визначає border-bottom: 1px solid lightgray. */
+@media (max-width: 50rem) {
+    table, thead, tbody, th, td, tr { 
+        display: block; /* перетворює на блоки */
+    }
+       
+    thead tr { 
+        display: none; /* приховує thead tr */
+    }
+      
+    tr {
+        border: 1px solid darkgrey; /* встановлює border для tr */
+    }
+      
+    td { 
+        border: none; /* відміняє border */
+        border-bottom: 1px solid lightgray; /* встановлює border-bottom для td */
+    } 
+}
