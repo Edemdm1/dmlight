@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <h1>Hello, javascript!</h1>
+
+    <script>
+        // В середині script визначте 2 змінні message1 зі значенням Hello та message2 зі значенням JavaScript. Використовуючи ці змінні та alert, виконайте відображення рядка "Hello JavaScript!".
+        let message1 = "Hello";
+        let message2 = "JavaScript";
+        alert(message1 + " " + message2 + "!")
+    </script>
+
+    <!-- Виправити помилку у коді -->
+    <script>
+        'use strict';
+        
+        let message = "hello";
+        message = 123456;
+
+    </script>
+
+    <!-- Напишіть програму, що запитує у користувача значення двох змінних x, y, та виводить їх суму -->
+    <script>
+        'use strict';
+
+        // Запитуємо у користувача значення двох змінних x та y
+        let x = prompt("Введіть значення змінної x:");
+        let y = prompt("Введіть значення змінної y:");
+
+        // Перетворюємо введені значення на числа та обчислюємо суму
+        let sum = parseFloat(x) + parseFloat(y);
+
+        // Виводимо суму на екран
+        alert("Сума чисел " + x + " та " + y + " дорівнює " + sum);
+    </script>
+
+    <!-- Виправити помилку у коді -->
+    <script>
+        'use strict';
+    
+        let a = BigInt(9007199254740991); // Явне перетворення a на тип BigInt
+        let b = 9007199254740991n;
+        console.log(a + b);
+        // Uncaught TypeError: can't convert BigInt to number
+    </script>
+
+        <!-- Перепишіть код так, щоб результат дорівнював 5 -->
+    <script>
+        'use strict';
+
+        let apples = parseInt("2");
+        let oranges = parseInt("3");
+
+        alert( apples + oranges ); 
+    </script>
+
+    <!-- Які кінцеві значення всіх змінних a, b, c і d після виконання наведеного нижче коду? -->
+    <script>
+        'use strict';
+
+        let a1 = 1, b1 = 1;
+        let c1 = ++a1; // 2
+        console.log("a1 = ", a1)
+        console.log("c1 = ", c1)
+        let d1 = b1++; // 1
+        console.log("b1 = ", b1)
+        console.log("d1 = ", d1)
+    </script>
+
+    <!-- Які значення a і x після виконання наведеного нижче коду? -->
+    <script>
+        'use strict';
+
+        let a2 = 2;
+        let x2 = 1 + (a2 *= 2);
+        console.log("x2 = ", x2)
+    </script>
+    
+    <!-- Які результати цих виразів? -->
+    <script>
+        'use strict';
+    
+        console.log("res1 = ", "" + 1 + 0); 
+        console.log("res2 = ", "" - 1 + 0)
+        console.log("res3 = ", true + false)
+        console.log("res4 = ", 6 / "3")
+        console.log("res5 = ", "2" * "3")
+        console.log("res6 = ", 4 + 5 + "px")
+        console.log("res7", "$" + 4 + 5)
+        console.log("res8 = ", "4" - 2)
+        console.log("res9 = ", "4px" - 2)
+        console.log("res10 = ", "  -9  " + 5)
+        console.log("res11 = ", "  -9  " - 5)
+        console.log("res12 = ", null + 1)
+        console.log("res13 = ", undefined + 1)
+        console.log("res14 = ", NaN + 1)
+    </script>
+
+    <script>
+        'use strict';
+        // скоротити цей код за допомогою операторів += і *=:
+        // let n = 2;
+        // n = n + 5;
+        // n = n * 2;
+
+        let n = 2;
+        n += 5;
+        n *= 2;
+
+    </script>
+
+    <script>
+        let n1 = "   123   ";
+        let n2 = "123z";
+        let n3 = true;
+        let n4 = false;
+        
+        console.log(n1, n2, n3, n4);
+        // Перетворити змінні n1, n2, n3, n4 на числа 
+
+        n1 = parseInt(n1.trim()); // parseInt() перетворює рядок у ціле число
+        n2 = parseInt(n2); // "123z" буде перетворено у 123, оскільки "z" буде проігноровано
+        n3 = Number(n3); // Простий спосіб перетворити логічне значення на число
+        n4 = Number(n4); 
+
+    console.log(n1, n2, n3, n4);
+    </script>
+
+
+</body>
+</html>
