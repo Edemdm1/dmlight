@@ -79,14 +79,31 @@
         'use strict';
 
         let a2 = 2;
-        let x2 = 1 + (a2 *= 2);
+        let x2 = 1 + (a2 *= 2);// a2 = 4, x2 = 5;
+        console.log("a2 = ", a2)
         console.log("x2 = ", x2)
     </script>
     
     <!-- Які результати цих виразів? -->
     <script>
         'use strict';
-    
+
+        "" + 1 + 0 // 10;
+        "" - 1 + 0 // -1;
+        true + false // 1;
+        6 / "3" // 2;
+        "2" * "3" // 6;
+        4 + 5 + "px" // 9px;
+        "$" + 4 + 5 // $45;
+        "4" - 2 // 2;
+        "4px" - 2 // NaN;
+        "  -9  " + 5 //    -9  5;
+        "  -9  " - 5 // -14;
+        null + 1 // 1;
+        undefined + 1 // NaN;
+        NaN + 1 // NaN;
+
+   
         console.log("res1 = ", "" + 1 + 0); 
         console.log("res2 = ", "" - 1 + 0)
         console.log("res3 = ", true + false)
