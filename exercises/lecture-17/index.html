@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	
+</head>
+<body>
+   
+    <script>
+
+        let x = 3
+        let y = 4
+
+        x == 3 // true;
+        x === "3" // false;
+        x!=5 // true;
+        x!== "5" // false;
+        X!== 3 // ReferenceError: X is not defined;
+        y > 5 // false;
+        y >= 3 // true;
+        y < 5 // true;
+        y <= 2 // false;
+        1 == true // true
+        null == undefined // true;
+        NaN == NaN // false, NaN is never equal to anything including itself;
+
+
+    </script>
+
+    <script>
+        let x1 = 3;
+        let y1 = 4;
+        let z1 = 5;
+
+        x1 ||= y1;
+        x1 || (y1 = z1);
+        x1 &&= y1;
+        x1 && (y1 = z1);
+        x1 ??= y1;
+        x1 ?? (y1 = z1);
+
+        // Results:
+        // x: 4
+        // y: 5
+        // z: 5
+
+    </script>
+
+    <script>
+        // Напишіть програму, що пропонує користувачеві вгадати якесь число, наприклад 3. У разі успіху, потрібно вивести вітання користувачеві, наприклад - 'Congratulations, You did it!' Якщо число більше за 3, потрібно вивести повідомлення користувачеві, наприклад - 'The number is too long' Якщо число менше за 3, потрібно вивести повідомлення користувачеві, наприклад - 'The number is short'
+
+       const secretNumber = 3;
+
+       let guessNumber = parseInt(prompt("Guess the number (from 1 to 10): "));
+
+       if (guessNumber === 3) {
+        alert ('Congratulations, You did it!');
+       } else if (guessNumber > 3) {
+        alert('The number is too long');
+       } else {
+        alert('The number is short');
+       }
+
+    </script>
+
+    <script>
+        // Напишіть програму, що пропонує користувачеві ввести назву дня тижня, наприклад - Понеділок. Якщо користувач ввів Понеділок або Monday, вивести повідомлення "Start of the work week!" Якщо користувач ввів П'ятниця або Friday, вивести повідомлення "End of the work week!" В інших випадках вивести повідомлення "A regular day"
+
+        // Напишіть версію програми, застосовуючи оператор if else
+
+        let dayOfWeek = prompt("Please input name of the day: ");
+        if (dayOfWeek.toLowerCase() === 'monday') {
+            alert("Start of the work week!");
+        } else if (dayOfWeek.toLowerCase() === 'friday') {
+            alert("End of the work week!");
+        } else {
+            alert("A regular day");
+        }
+    </script>
+    <script>
+        // Напишіть програму, що пропонує користувачеві ввести назву дня тижня, наприклад - Понеділок. Якщо користувач ввів Понеділок або Monday, вивести повідомлення "Start of the work week!" Якщо користувач ввів П'ятниця або Friday, вивести повідомлення "End of the work week!" В інших випадках вивести повідомлення "A regular day"
+
+        // Напишіть версію програми, застосовуючи оператор switch
+
+        let day = (prompt("Please input name of the day: ")).toLowerCase();
+
+        switch (day) {
+            case 'monday':
+                alert("Start of the work week!");
+                break;
+
+            case 'friday':
+                alert("End of the work week!");
+                break;
+            
+            default:
+                alert("A regular day");
+                break;
+
+        }
+    </script> 
+    
+    <script>
+        //  результатами іспиту студент набирає певну кількість балів, що зберігається в змінній score. Напишіть програму, що аналізує значення score та призначає студенту ступінь grade за таким алгоритмом:
+
+        // Якщо студент набрав менше 50 балів, призначити йому ступінь 'F'
+        // Якщо студент набрав менше 70 балів, призначити йому ступінь 'D'
+        // Якщо студент набрав менше 80 балів, призначити йому ступінь 'C'
+        // Якщо студент набрав менше 90 балів, призначити йому ступінь 'B'
+        // В іншому випадку призначити йому ступінь 'A'
+        // Напишіть версію програми, застосовуючи оператор if else
+
+        let score = 83;
+        let grade;
+        if (score < 50) {
+            grade = 'F';
+        } else if (score < 70) {
+            grade = 'D';
+        } else if (score < 80) {
+            grade = 'C';
+        } else if (score < 90) {
+            grade = 'B';
+        } else {
+            grade = 'A';
+        }
+
+        console.log("Grade of the student: ", grade);
+    </script>
+    <script>
+        //  результатами іспиту студент набирає певну кількість балів, що зберігається в змінній score. Напишіть програму, що аналізує значення score та призначає студенту ступінь grade за таким алгоритмом:
+
+        // Якщо студент набрав менше 50 балів, призначити йому ступінь 'F'
+        // Якщо студент набрав менше 70 балів, призначити йому ступінь 'D'
+        // Якщо студент набрав менше 80 балів, призначити йому ступінь 'C'
+        // Якщо студент набрав менше 90 балів, призначити йому ступінь 'B'
+        // В іншому випадку призначити йому ступінь 'A'
+        // Напишіть версію програми, застосовуючи тернарний оператор
+
+        let scoreStudent = 91;
+        let gradeStudent = scoreStudent < 50 ? 'F' : scoreStudent < 70 ? 'D' : scoreStudent < 80 ? 'C' : scoreStudent < 90 ? 'B' : 'A';
+        console.log("Grade of the student: ", gradeStudent);
+
+
+    </script>
+
+    <script>
+        // Виправити помилку у наступному коді:
+        
+        let firstName = null;
+        let lastName = undefined;
+        let username = (firstName || lastName) ?? "Guest";
+
+        console.log(username); // "Guest"
+
+    </script>
+
+</body>
+</html>
