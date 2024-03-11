@@ -71,9 +71,9 @@
         // Напишіть версію програми, застосовуючи оператор if else
 
         let dayOfWeek = prompt("Please input name of the day: ");
-        if (dayOfWeek.toLowerCase() === 'monday') {
+        if (dayOfWeek.toLowerCase() === "monday" || dayOfWeek.toLowerCase() === "понеділок") {
             alert("Start of the work week!");
-        } else if (dayOfWeek.toLowerCase() === 'friday') {
+        } else if (dayOfWeek.toLowerCase() === "friday" || dayOfWeek.toLowerCase() === "п'ятниця") {
             alert("End of the work week!");
         } else {
             alert("A regular day");
@@ -87,11 +87,13 @@
         let day = (prompt("Please input name of the day: ")).toLowerCase();
 
         switch (day) {
-            case 'monday':
+            case "monday":
+            case "понеділок":
                 alert("Start of the work week!");
                 break;
 
-            case 'friday':
+            case "friday":
+            case "п'ятниця":
                 alert("End of the work week!");
                 break;
             
