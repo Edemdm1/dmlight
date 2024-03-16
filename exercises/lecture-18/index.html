@@ -8,8 +8,8 @@
 </head>
 <body>
 
-  - функція checkAge повертає true, якщо параметр age перевищує 18.
-  - в іншому випадку запитує підтвердження та повертає результат:
+  <!-- - функція checkAge повертає true, якщо параметр age перевищує 18.
+  - в іншому випадку запитує підтвердження та повертає результат: -->
     
     <script>
     function checkAge(age) {
@@ -69,7 +69,7 @@
     </script>
     <script>
         // Чи потрібні дужки навколо age > 18
-        return (age > 18) || confirm('Did parents allow you?');
+        // return (age > 18) || confirm('Did parents allow you?');
         // Answer: Дужки навколо age > 18 необов'язкові у цьому випадку. Дужки допомогають уникнути непорозумінь щодо пріоритету операторів.
     </script>
     <script>
@@ -95,6 +95,109 @@
         function min(a, b) {
             return ( a < b) ? a : b;
         }
+    </script>
+
+    <script>
+        // Напишіть функцію pow(x,n), яка повертає x у ступені n. Або, іншими словами, множить x на себе n разів і повертає результат. У цьому завданні функція повинна підтримувати лише натуральні значення n: цілі числа від 1.
+
+        function pow(x, n) {
+            if (n === 0) {
+                return x;
+            } else {
+                return x * pow(x, n - 1);
+            }
+        }
+
+        
+        console.log(pow(3, 2)); // 9
+        console.log(pow(3, 3)); // 27
+        console.log(pow(1, 100)); // 1
+
+    </script>
+    <script>
+        function pow(x, n) {
+            if (n === 0) {
+                return 1;
+            }
+            let result = 1;
+            for (let i = 0; i < n; i++) {
+                result *= x;
+            }
+            return result;
+        }
+
+        function main() {
+            let x = parseFloat(prompt("Введіть число x:"));
+            let n = parseInt(prompt("Введіть натуральне число n:"));
+            
+            if (isNaN(x) || isNaN(n) || n < 1) {
+                console.log("Некоректне значення x або n.");
+                return;
+            }
+            
+            let result = pow(x, n);
+            console.log("Результат:", result);
+        }
+
+        main();
+
+    </script>
+    <script>
+        // Викликати функцію ask, використовуючи функцію стрілок:
+        const ask = (question, yes, no) => {
+            if (confirm(question)) {
+                yes();
+            } else {
+                no();
+            }
+        };
+
+        
+        ask("Ви погоджуєтеся?", () => {
+            console.log("Ви вибрали 'Так'");
+        }, () => {
+            console.log("Ви вибрали 'Ні'");
+        });
+
+    </script>
+    <script>
+        // Викликати функцію ask, використовуючи функціональний вираз:
+        let ask1 = function(question, yes, no) {
+            if (confirm(question)) {
+                yes();
+            } else {
+                no();
+            }
+        };
+
+
+        ask1("Ви погоджуєтеся?", function() {
+            console.log("Ви вибрали 'Так'");
+        }, function() {
+            console.log("Ви вибрали 'Ні'");
+        });
+
+    </script>
+    <script>
+        // Маємо 3 функції.
+        function A() { 
+            console.log('A was called')
+            ; return undefined;
+        }
+        function B() { 
+            console.log('B was called');
+             return false;
+            }
+        function C() { 
+            console.log('C was called'); 
+            return "foo";
+        }
+    // 8.1. Яким чином виконати виклик функцій A() і C(), щоб на консолі отримати такий результат A was called C was called foo
+        console.log(A(), C());
+
+    // 8.2. Яким чином виконати виклик функцій B() і C(), щоб на консолі отримати такий результат B was called C was called foo
+        console.log(B(), C());
+
     </script>
 
 
