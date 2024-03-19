@@ -107,41 +107,34 @@ console.log("Властивість prop в об'єкті mary:", mary.hasOwnPro
 // 7.  Створіть об'єкт DirtyMartini, що має 2 методи english_please() та excuse_my_french() При виклику методу excuse_my_french(), на консоль виводиться:
 
 function DirtyMartini() {
+    this.ingredients = {
+        gin: 170.4786,
+        vermouth: 0.0351951,
+        oliveBrine: 28.4131,
+        olives: 4
+    };
+
     this.english_please = function() {
         console.log("ingredients:");
-        console.log("  6 fluid ounces gin");
-        console.log("  1 dash dry vermouth (0.0351951ml)");
-        console.log("  1 fluid ounce brine from olive jar");
-        console.log("  4 stuffed green olives");
+        console.log("  " + this.ingredients.gin + " ml gin");
+        console.log("  1 dash dry vermouth (" + this.ingredients.vermouth + "ml)");
+        console.log("  " + this.ingredients.oliveBrine + " ml brine from olive jar");
+        console.log("  " + this.ingredients.olives + " stuffed green olives");
     };
 
     this.excuse_my_french = function() {
         console.log("ingrédients:");
-        console.log("  170.4786 ml de gin");
-        console.log("  1 trait de vermouth sec (0.0351951ml)");
-        console.log("  28.4131 ml de saumure du pot d'olive");
-        console.log("  4 olives vertes farcies");
+        console.log("  " + this.ingredients.gin + " ml de gin");
+        console.log("  1 trait de vermouth sec (" + this.ingredients.vermouth + "ml)");
+        console.log("  " + this.ingredients.oliveBrine + " ml de saumure du pot d'olive");
+        console.log("  " + this.ingredients.olives + " olives vertes farcies");
     };
 }
 
 const dirtyMartini = new DirtyMartini();
 
-// При виклику методу english_please(), на консоль виводиться:
 
-//       ingredients:
-//         6 fluid ounces gin
-//         1 dash dry vermouth (0.0351951ml) 
-//         1 fluid ounce brine from olive jar
-//         4 stuffed green olives
 dirtyMartini.english_please();
 
-
-// При виклику методу excuse_my_french(), на консоль виводиться:
-
-//       ingrédients:  
-//         170.4786 ml de gin
-//         1 trait de vermouth sec (0.0351951ml) 
-//         28.4131 ml de saumure du pot d'olive
-//         4 olives vertes farcies
-
 dirtyMartini.excuse_my_french();
+
