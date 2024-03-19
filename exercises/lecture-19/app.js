@@ -26,7 +26,7 @@ let string5 = 'Hello World';
 let first_value = string5.charAt(0);
 console.log(first_value);
 
-let first = string5.charAt(0);
+let first = string5[0];
 console.log(first); 
 
 // 3. повернути символ J рядка str3:
@@ -205,9 +205,8 @@ console.log(validateName("+Jonny123"));
 // 16. Створити регулярний вираз, який призначений для перевірки email на коректність.
 
 function validateEmail(email) {
-    const pattern = /^[\w.-]+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/
-    ;
-
+    const pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    
     let matched = email.match(pattern);
     if (pattern.test(email)) {
         console.log("Email is correct", matched);
