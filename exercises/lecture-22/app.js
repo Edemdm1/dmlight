@@ -46,12 +46,8 @@ p3Element.classList.add('third');
 // Отримання абзацу 4 за його ідентифікатором p4
 const p4Element = document.querySelector('#p4');
 
-// Встановлення для нього клас fourth
-p4Element.classList.add('fourth');
-
-// Встановлення для нього клас border
-p4Element.classList.add('border');
-
+// Встановлення для нього клас fourth, border
+p4Element.classList.add('fourth', 'border');
 
 // 6. Знайти всі елементи з класом container. Використовуючи цикл for, вивести на консоль перший елемент для кожного зі знайдених елементів.
 
@@ -80,10 +76,7 @@ for (let i = 0; i < containerElements.length; i++) {
 const headers = document.querySelectorAll('.container header');
 
 // Заміна заголовків h1 згідно з умовою
-for (let i = 0; i < headers.length; i++) {
-    // Залишаємо перший заголовок h1, якщо це перший елемент
-    if (i === 0) continue;
-
+for (let i = 1; i < headers.length; i++) {
     // Створення нового тегу відповідно до індексу
     const newTag = document.createElement('h' + (i + 1));
 
@@ -109,4 +102,5 @@ for (let i = 0; i < headers.length; i++) {
     // Додавання класу до відповідного тегу-заголовка
     headers[i].querySelector(tag).classList.add(headerClasses[i]);
 }
+
 
