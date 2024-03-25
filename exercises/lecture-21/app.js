@@ -32,12 +32,11 @@ for (const fruit of fruits) {
 
 
 // 6. Використовуючи цикл for, вивести на консоль парні елементи з масиву Numbs.
-const Numbs = [1,2,3,4,5,6,7,8,9,10];
+const Numbs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 for (i = 0; i < Numbs.length; i++) {
     if (Numbs[i] % 2 === 0) {
         console.log(Numbs[i]);
-        i++;
     }
 }
 
@@ -106,20 +105,22 @@ for (i = 0; i < Numbs.length; i++) {
 {
     const names = ['Batman', 'Catwoman', 'Joker', 'Bane'];
 
-    const catwomanIndex = names.indexOf('Catwoman');
+    const iCatwoman = names.indexOf("Catwoman");
+    const iJoker = names.indexOf("Joker");
     
-    if (catwomanIndex !== -1) {
-        names[catwomanIndex] = 'Alfred';
+    if (iCatwoman !== -1) {
+        names.splice(iCatwoman, 1, "Alfred"); 
     }
-
-    const jokerIndex = names.indexOf('Joker');
-
-    if (jokerIndex !== -1) {
-        names[jokerIndex] = 'Alfred';
+    if (iJoker !== -1) {
+        names.splice(iJoker, 1); 
     }
-
-    console.log(names);
+    
+    console.log(names); 
+    
+    
 }
+
+
 
 // 14. Перевірити чи існує рядок 'Alfred' у масиві names, і якщо не існує, додати його до кінця масиву.
 
