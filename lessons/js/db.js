@@ -5,7 +5,7 @@ let products = [
 			title: "Sold",
 			bg: "sold"	
 		},
-		image: "/images/product-1.jpg",
+		image: "/lessons/images/product-1.jpg",
 		name: "Kui Ye Chen’s AirPods",
 		price: 21,
 		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
@@ -19,7 +19,7 @@ let products = [
 			title: "",
 			bg: ""	
 		},
-		image: "/images/product-2.jpg",
+		image: "/lessons/images/product-2.jpg",
 		name: "Apple wireless keyboard",
 		price: 30,
 		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
@@ -32,7 +32,7 @@ let products = [
 			title: "New",
 			bg: "new"	
 		},
-		image: "/images/product-3.jpg",
+		image: "/lessons/images/product-3.jpg",
 		name: "Cyan cotton t-shirt",
 		price: 5,
 		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
@@ -45,7 +45,7 @@ let products = [
 			title: "",
 			bg: ""	
 		},
-		image: "/images/product-4.jpg",
+		image: "/lessons/images/product-4.jpg",
 		name: "Timex Unisex Originals",
 		price: 51,
 		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
@@ -58,7 +58,7 @@ let products = [
 			title: "Sale",
 			bg: "sale"	
 		},
-		image: "/images/product-5.jpg",
+		image: "/lessons/images/product-5.jpg",
 		name: "Red digital smartwatch",
 		price: 10,
 		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
@@ -72,7 +72,7 @@ let products = [
 			title: "",
 			bg: ""	
 		},
-		image: "/images/product-6.jpg",
+		image: "/lessons/images/product-6.jpg",
 		name: "Nike air max 95",
 		price: 31,
 		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
@@ -85,7 +85,7 @@ let products = [
 			title: "Sale",
 			bg: "sale"
 		},
-		image: "/images/product-7.jpg",
+		image: "/lessons/images/product-7.jpg",
 		name: "Joemalone Women perfume",
 		price: 35,
 		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
@@ -99,7 +99,7 @@ let products = [
 			title: "",
 			bg: ""	
 		},
-		image: "/images/product-8.jpg",
+		image: "/lessons/images/product-8.jpg",
 		name: "Apple Watch",
 		price: 25,
 		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
@@ -113,7 +113,7 @@ let products = [
 			title: "Sold",
 			bg: "sold"	
 		},
-		image: "/images/product-9.jpg",
+		image: "/lessons/images/product-9.jpg",
 		name: "Black Canon EOS camera",
 		price: 24,
 		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
@@ -127,7 +127,7 @@ let products = [
 			title: "New",
 			bg: "new"	
 		},
-		image: "/images/product-10.jpg",
+		image: "/lessons/images/product-10.jpg",
 		name: "Silver black round Ipod",
 		price: 16,
 		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
@@ -140,7 +140,7 @@ let products = [
 			title: "Sale",
 			bg: "sale"	
 		},
-		image: "/images/product-11.jpg",
+		image: "/lessons/images/product-11.jpg",
 		name: "Digital smartwatch",
 		price: 13,
 		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
@@ -154,7 +154,7 @@ let products = [
 			title: "New",
 			bg: "new"	
 		},
-		image: "/images/product-12.jpg",
+		image: "/lessons/images/product-12.jpg",
 		name: "Black camera lens",
 		price: 11,
 		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
@@ -167,7 +167,7 @@ let products = [
 			title: "Sale",
 			bg: "sale"	
 		},
-		image: "/images/product-11.jpg",
+		image: "/lessons/images/product-11.jpg",
 		name: "Digital smartwatch",
 		price: 13,
 		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
@@ -179,78 +179,78 @@ let products = [
 let categories = [
 	{
 		id: 1,
-		image: "/images/product-1.jpg",
+		image: "/lessons/images/product-1.jpg",
 		section: "Electronics",
     	name: "Headphone"
 	},
 	{
     	id: 2,
     	name: "Keyboard",
-		image: "/images/product-2.jpg",
+		image: "/lessons/images/product-2.jpg",
 		section: "Electronics",
 	},
 	{
 		id: 3,
-		image: "/images/product-3.jpg",
+		image: "/lessons/images/product-3.jpg",
 		name: "T-Shirts",
     	section: "Fashion & Acc"
 	},
 	{
 		id: 4,
-		image: "/images/product-4.jpg",
+		image: "/lessons/images/product-4.jpg",
 		name: "Watches",
     	section: "Fashion & Acc"
 	},
 	{
 		id: 5,
-		image: "/images/product-5.jpg",
+		image: "/lessons/images/product-5.jpg",
 		name: "Shoes",
     	section: "Fashion & Acc"
 	},
 
 	{
 		id: 6,
-		image: "/images/product-7.jpg",
+		image: "/lessons/images/product-7.jpg",
 		name: "Perfume",
     	section: "Health & Beauty"
 	},
 	{
 		id: 7,
-		image: "/images/product-11.jpg",
+		image: "/lessons/images/product-11.jpg",
 		name: "Smartwatch",
     	section: "Health & Beauty",
 	},
 
 	{
 		id: 8,
-		image: "/images/product-8.jpg",
+		image: "/lessons/images/product-8.jpg",
 		name: "Apple Watch",
     	section: "Electronics"
 	},
                       
 	{
 		id: 9,
-		image: "/images/product-9.jpg",
+		image: "/lessons/images/product-9.jpg",
 		name: "Camera",
     	section: "Cameras"
 	},
                    
 	{
 		id: 10,
-		image: "/images/product-10.jpg",
+		image: "/lessons/images/product-10.jpg",
 		name: "Ipod",
     	section: "Electronics"
 	},
 	{
 		id: 11,
-		image: "/images/product-11.jpg",
+		image: "/lessons/images/product-11.jpg",
 		name: "Digital smartwatch",
     	section: "Fashion & Acc"
 	},
 
 	{
 		id: 12,
-		image: "/images/product-12.jpg",
+		image: "/lessons/images/product-12.jpg",
 		name: "Lens",
     	section: "Cameras"
 	},
