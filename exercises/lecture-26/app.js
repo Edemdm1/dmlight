@@ -92,13 +92,20 @@ results.forEach(result => {
 
 let nestedArray = [1, 2, 3, [10, 11, 12], 21, 22, 23, [31, 32, 33, 34], [41, 42]];
 
+// function flattenArray(arr) {
+//   return arr.reduce((acc, currentValue) => {
+//     if (Array.isArray(currentValue)) {
+//       return acc.concat(flattenArray(currentValue));
+//     } else {
+//       return acc.concat(currentValue);
+//     }
+//   }, []);
+// }
+
+// Спрощений варіант:
 function flattenArray(arr) {
   return arr.reduce((acc, currentValue) => {
-    if (Array.isArray(currentValue)) {
-      return acc.concat(flattenArray(currentValue));
-    } else {
-      return acc.concat(currentValue);
-    }
+    return acc.concat(currentValue);
   }, []);
 }
 
