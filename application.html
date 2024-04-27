@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>S-service</title>
+  <meta property="og:title" content="S-service — Ремонт техники">
+  <meta property="og:site_name" content="S-service — Ремонт техники">
+  <meta property="og:description" content="S-service — это гарантия надёжности. Компания осуществляет обслуживание и срочный ремонт любой сложности. Мы всегда вежливы и пунктуальны, так как высоко ценим Ваше доверие.">
+  <meta name="keywords" content=" Service — Ремонт техники">
+  <meta name="fk:svg:icon" content="https://service.tech/wp-content/themes/space-x/fk/assets/img-icon/icon">
+  <link href="https://fonts.googleapis.com/css?family=El+Messiri:regular,500,600,700" rel="stylesheet" />
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <div class="header-logo">
+        <a href="index.html" class="header-logo__link"><img src="img/icon.svg" alt="icon_header" class="header-logo__img"></a>
+      </div>
+      <nav class="header-nav">
+        <ul class="header-nav__list">
+          <li class="header-nav__item"><a href="services.html" class="header-nav__link">Servises</a></li>
+          <li class="header-nav__item"><a href="offer.html" class="header-nav__link">Sale parts</a></li>
+          <li class="header-nav__item"><a href="aboutUs.html" class="header-nav__link">About us</a></li>
+          <li class="header-nav__item"><a href="application.html" class="header-nav__link">Sending form</a></li>
+          <li class="header-nav__item"><a href="contact.html" class="header-nav__link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-mob">
+        <div class="burger">
+          <div class="burger-lines"></div>
+        </div>
+        <div class="header-mob__nav">
+          <ul class="header-mob__list">
+            <li class="header-nav__item"><a href="services.html" class="header-nav__link">Servises</a></li>
+            <li class="header-nav__item"><a href="offer.html" class="header-nav__link">Sale parts</a></li>
+            <li class="header-nav__item"><a href="aboutUs.html" class="header-nav__link">About us</a></li>
+            <li class="header-nav__item"><a href="application.html" class="header-nav__link">Sending form</a></li>
+            <li class="header-nav__item"><a href="contact.html" class="header-nav__link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+
+<section class="application">
+  <div class="container">
+    <h2 class="hello__title">Conect with us</h2>
+      <form class="application__form">
+        <h4 class="application__form__title">Sending form</h4>
+        <div class="application__form__item">
+          <input id="name-user" placeholder="Name" name="name-user" type="text" class="application__input" data-validate-field="Surname">
+        </div>
+        <div class="application__form__item">
+          <input id="mail-user" placeholder="Email" name="mail-user" type="text" class="application__input" data-validate-field="email">
+        </div>
+        <div class="application__form__item">
+          <input id="phone-user" placeholder="Telephone number" name="phone-user" type="phone"
+            class="application__input inputPhone" data-validate-field="phone">
+        </div>
+        <select class="application__input application__subject" name="subject-user">
+          <option class="application__options">Subject Email</option>
+          <option class="application__options">Repair</option>
+          <option class="application__options">Collaboration</option>
+          <option class="application__options">Complaint</option>
+        </select>
+        <div class="application__form__item">
+          <textarea class="application__textarea application__input" id="textarea-user" placeholder="Write message"
+            name="textarea-user" data-validate-field="textarea"></textarea>
+        </div>
+        <button type='submit' id="user-btn" class="modal__btn btn--primary btn--dark application__button"
+          name="user-btn">
+          <p class="btn--primary__text">Send</p>
+        </button>
+      </form>
+
+  
+  </div>
+</section>
+<script src="js/just-validate.min.js"></script>
+<script src="js/application-form.js"></script>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-top__logo">
+        <a href="index.html" class="footer-top-logo__link"><img src="img/icon-footer.svg" alt="icon_footer" class="footer-top__img"></a>
+      </div>
+  <div class="footer-top__contact">
+    <h3 class="footer-top__title">Call</h3>
+    <p class="footer-top__phone-number">+38 (077)-777-77-77</p>
+    <p class="footer-top__phone-number">+38 (088)-888-88-88</p>
+    <p class="footer-top__phone-number">+38 (099)-999-99-99</p>
+  </div>
+  <div class="footer-top__schedule">
+    <img src="img/clock.svg" alt="clock.svg" class="footer-top__schedule__img">
+    <p class="footer-top__schedule__text"><strong>Work schedule:</strong> 
+      Mon-Fri: 10:00-19:00
+      Sat,Sun: weekend</p>
+  </div>
+  
+    </div>
+    <div class="section-line"></div>
+    <div class="footer-bottom">
+      <p class="footer-bottom__copywrite">© 2024 DMLight. Copyright.</p>
+    </div>
+  </div>
+  
+</footer>
+<script src="js/script.js"></script>
+</body>
+
+</html>

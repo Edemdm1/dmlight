@@ -1,0 +1,12 @@
+@import "vars";
+@import "_mixin";
+
+//!Basic
+@import "basic";
+@import "_header";
+//!Sections
+@import "_sections";
+@import "contact-form";
+@import "application-form";
+//!footer
+@import "_footer";
